@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 15:49:40 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/03 18:09:27 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/05 21:01:49 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@
 # include <mlx.h>
 
 # include "../Libft/libft.h"
+
+# define true 1
+# define false 0
+# define NULL __null
 
 //E1->argcheck
 # define E1001 "Not enough arguments\n"
