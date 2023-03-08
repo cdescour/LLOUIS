@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 20:50:18 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/05 21:18:23 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/07 22:46:52 by lreille          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ bool    ft_check_pl_content(char **tab)
         info3 = ft_split(tab[3], ',');
     }
     if (ft_check_coord(info1) == 1)
-        if (ft_check_coord(info2) == 1)
+        if (ft_vector_check(info2) == 1)
             if (ft_check_colors(info3) == 1)
                return (true);
     return (false);
@@ -44,7 +44,7 @@ bool    ft_check_sp_content(char **tab)
         info3 = ft_split(tab[3], ',');
     }
     if (ft_check_coord(info1) == 1)
-        if (ft_check_float(info2) == 1)
+        if (ft_lum_ratio_check(info2) == 1)
             if (ft_check_colors(info3) == 1)
                 return (true);
     return (false);
@@ -66,9 +66,9 @@ bool    ft_check_cy_content(char **tab)
         info4 = ft_strcpy(tab[4]);
         info5 = ft_split(tab[5], ',');
     }
-    if (ft_check_coord(info1) == 1 && ft_check_coord(info2) == 1)
-        if (ft_check_float(info3) == 1 && ft_check_float(info4) == 1)
-            if (ft_check_coord(info5)== 1)
+    if (ft_coord_check(info1) == 1 && ft_vector_check(info2) == 1)
+        if (ft_check_float(info3) == 1 && ft_check_float(info4) == 1)//change dia, h.
+            if (ft_check_colors(info5)== 1)
                 return (true);
     return (false);
 }

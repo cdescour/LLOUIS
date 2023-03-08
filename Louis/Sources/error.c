@@ -6,13 +6,14 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 17:43:45 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/05 21:18:17 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/08 12:39:50 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Include/minirt.h"
+#include "../Includes/minirt.h"
 
 void ft_error(char *str)
 {
     ft_putstr_fd(str, 2);
+	exit(0);
 }

@@ -6,7 +6,7 @@
 #    By: cdescour <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/22 23:06:00 by cdescour          #+#    #+#              #
-#    Updated: 2022/03/22 23:18:33 by cdescour         ###   ########.fr        #
+#    Updated: 2023/03/08 12:33:49 by cdescour         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS	=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 			ft_calloc.c ft_strdup.c ft_split.c ft_memmove.c\
 			ft_bzero.c ft_memset.c ft_memcpy.c ft_memcmp.c ft_memchr.c\
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c\
-			ft_substr.c	ft_strjoin.c ft_itoa.c\
+			ft_substr.c	ft_strjoin.c ft_itoa.c ft_strcmp.c\
 
 OBJS	= ${SRCS:.c=.o}
 
