@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 23:21:30 by lreille           #+#    #+#             */
-/*   Updated: 2023/03/09 23:26:44 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 23:55:07 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isdigit_and_symbol(char c)
 	return (0);
 }
 
-int	ft_dot_pos(char *info)/////
+int	ft_dot_pos(char *info)
 {
 	int	i;
 
@@ -33,8 +33,7 @@ int	ft_dot_pos(char *info)/////
 	return (0);
 }
 
-int	ft_contains_wrong_symbols(char *info)/////
-{
+int	ft_contains_wrong_symbols(char *info)
 	int	i;
 
 	i = 0;

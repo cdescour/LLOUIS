@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 19:01:28 by lreille           #+#    #+#             */
-/*   Updated: 2023/03/09 23:26:47 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 23:55:09 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int    ft_check_A_content(char **tab)
 
 	stats = true;
 	if (ft_dbltablen(tab) != 3)
-		return (false);
+		ft_error(E1020);
 	info1 = tab[1];
 	info2 = ft_split(tab[2], ',');
 	if (ft_lum_ratio_check(info1) == false)

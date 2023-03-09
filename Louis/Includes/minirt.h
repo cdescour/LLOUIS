@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 15:49:40 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/09 22:20:28 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 23:53:07 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 # define IMG_X 1920
 # define IMG_Y 1080
 
-//E1->argcheck
+//E1->argcheck an objects
 # define E1001 "Error\nNot enough arguments\n"
 # define E1002 "Error\nToo many arguments\n"
 # define E1003 "Error\nFile name not defined\n"
@@ -48,6 +48,10 @@
 # define E1014 "Error\nCoordinates of 'x' out of the zone!\n"
 # define E1015 "Error\nCoordinates of 'y' out of the zone!\n"
 # define E1016 "Error\nCoordinates of 'z' out of the zone!\n"
+# define E1017 "Error\nToo many elements!\n"
+# define E1018 "Error\nCan't have them all at 0...#pragma endregion"
+# define E1019 "Error\nInvalid colors input\n"
+# define E1020 "Error\nWrong amount of elements\n"
 
 typedef struct s_pos
 {
