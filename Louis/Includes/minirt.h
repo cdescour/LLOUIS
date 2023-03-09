@@ -6,11 +6,10 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 15:49:40 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/08 13:07:58 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 22:20:28 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINIRT_H
 # define MINIRT_H
 
 # include <unistd.h>
@@ -120,7 +119,7 @@ typedef struct s_arg
 
 }       t_arg;
 
-typedef struct s_item
+typedef struct s_scene
 {
 	int			nb_equation;
 	int			nb_cam;
@@ -135,7 +134,7 @@ typedef struct s_item
 	t_sphere	*sphere;
 	t_plan		*plan;
 	t_cyl		*cyl;
-}   t_item;
+}   t_scene;
 
 //main.c
 int	main(int argc, char **argv);
@@ -150,3 +149,4 @@ int ft_check_obj(char **tab);
 //error.c
 void ft_error(char *str);
 #endif
+Footer

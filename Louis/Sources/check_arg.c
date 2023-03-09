@@ -6,13 +6,13 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 16:42:21 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/08 12:18:31 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 22:20:28 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Includes/minirt.h"
 
-void check_arg(t_arg *arg, int argc, char **argv)
+void	check_arg(t_arg *arg, int argc, char **argv)
 {
 	if (argc > 2)
 		ft_error(E1001);

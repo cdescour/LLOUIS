@@ -6,7 +6,7 @@
 /*   By: cdescour <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 15:56:14 by cdescour          #+#    #+#             */
-/*   Updated: 2023/03/08 12:20:31 by cdescour         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:52:20 by cdescour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,9 @@
 int	main(int argc, char **argv)
 {
 	t_arg	*arg;
-	t_item	*item;
+	t_obj	*obj;
 
-	arg = malloc(sizeof(t_arg));
-	item = malloc(sizeof(t_item));
-	check_arg(arg, argc, argv);
-	parse_arg(arg, item);
-
+	check_arg(&arg, argc, argv);
+	parse_file(&arg, &obj);
 	return (0);
 }
